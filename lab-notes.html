@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Notes | NeuroDev Studios</title>
+  <meta name="description" content="Lab Notes de NeuroDev Studios: bitácora de pruebas, sistemas, rendimiento y experimentos reales." />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="img/favicon.png" alt="NeuroDev Studios" class="brand-logo">
+        <div>
+          <span class="brand-name">NeuroDev Studios</span>
+          <small class="brand-sub">Digital Systems · Web · Labs</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="productos.html">Productos</a>
+        <a href="labs.html">Labs</a>
+        <a href="lab-notes.html">Lab Notes</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="subpage-hero">
+    <div class="container">
+      <span class="eyebrow">Lab Notes</span>
+      <h1>Bitácora de pruebas, ideas y sistemas</h1>
+      <p>
+        Un espacio para documentar hallazgos reales, errores, optimizaciones, ideas de producto
+        y ocurrencias que nacen de experimentar con tecnología en el mundo real.
+      </p>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head left">
+        <h2>Categorías</h2>
+        <p>
+          Lab Notes se divide en líneas simples para mantener el caos organizado.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="icon">🖥️</div>
+          <h3>Systems</h3>
+          <p>
+            Multi-seat, Aster, sesiones, particiones reales por usuario y arquitectura de sistemas.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>Performance</h3>
+          <p>
+            Pruebas de rendimiento, temperatura, RAM, GPU, mods, shaders y estabilidad real.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🎮</div>
+          <h3>Gaming</h3>
+          <p>
+            Minecraft, setups curiosos, ideas nacidas del juego y experimentos con hardware accesible.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head left">
+        <h2>Entradas destacadas</h2>
+        <p>
+          Primeras notas del laboratorio. Luego puedes ir añadiendo más sin romper la estructura.
+        </p>
+      </div>
+
+      <div class="notes-grid">
+        <article class="note-card">
+          <span class="note-tag">Systems</span>
+          <h3>Cómo convertí una sola PC en 4 estaciones funcionales</h3>
+          <p>
+            Caso real de una familia con 4 hijos usando una sola PC con sesiones separadas, ahorro de costos y uso diario estable.
+          </p>
+          <div class="note-meta">
+            <span>Hardware real</span>
+            <span>Multi-seat</span>
+          </div>
+          <a href="#" class="project-link">Leer nota →</a>
+        </article>
+
+        <article class="note-card">
+          <span class="note-tag">Performance</span>
+          <h3>Prueba: 2 Minecraft con Ryzen 5600G y solo 8 GB RAM</h3>
+          <p>
+            Validación importante sobre hardware modesto corriendo doble instancia con mods básicos y resultados sorprendentemente buenos.
+          </p>
+          <div class="note-meta">
+            <span>Ryzen 5600G</span>
+            <span>8 GB RAM</span>
+          </div>
+          <a href="#" class="project-link">Leer nota →</a>
+        </article>
+
+        <article class="note-card">
+          <span class="note-tag">Systems</span>
+          <h3>Qué le falta a Aster para ser realmente multiusuario</h3>
+          <p>
+            Reflexión técnica sobre el problema del aislamiento de carpetas, perfiles y juegos conflictivos como Black Ops 2 o Left 4 Dead.
+          </p>
+          <div class="note-meta">
+            <span>Aster</span>
+            <span>Isolation</span>
+          </div>
+          <a href="#" class="project-link">Leer nota →</a>
+        </article>
+
+        <article class="note-card">
+          <span class="note-tag">Performance</span>
+          <h3>120 FPS con RX 580, Photon y 200 mods</h3>
+          <p>
+            Cómo un setup accesible puede sostener una carga absurda si se le entienden bien sus límites y se optimiza con cabeza.
+          </p>
+          <div class="note-meta">
+            <span>RX 580</span>
+            <span>Photon</span>
+          </div>
+          <a href="#" class="project-link">Leer nota →</a>
+        </article>
+
+        <article class="note-card">
+          <span class="note-tag">Gaming</span>
+          <h3>Por qué Minecraft terminó siendo mi laboratorio técnico</h3>
+          <p>
+            Lo que empezó como vicio terminó revelando patrones de optimización, validación de hardware y posibles productos futuros.
+          </p>
+          <div class="note-meta">
+            <span>Minecraft</span>
+            <span>Gaming Lab</span>
+          </div>
+          <a href="#" class="project-link">Leer nota →</a>
+        </article>
+
+        <article class="note-card">
+          <span class="note-tag">Future</span>
+          <h3>Thiago: de asistente personal a compañero digital</h3>
+          <p>
+            Notas iniciales sobre la visión de Thiago como sistema de ayuda más humano, útil y presente en escenarios cotidianos.
+          </p>
+          <div class="note-meta">
+            <span>AI</span>
+            <span>Concept</span>
+          </div>
+          <a href="#" class="project-link">Leer nota →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-box">
+      <div>
+        <div class="section-head left">
+          <h2>Cómo usar esta bitácora</h2>
+          <p>
+            Aquí no hace falta escribir artículos eternos. La idea es documentar rápido, claro y con resultados reales.
+          </p>
+        </div>
+
+        <div class="simple-steps">
+          <article class="step-card">
+            <strong>01</strong>
+            <h3>Problema</h3>
+            <p>Qué estaba intentando resolver o qué cosa rara apareció.</p>
+          </article>
+
+          <article class="step-card">
+            <strong>02</strong>
+            <h3>Prueba</h3>
+            <p>Qué intenté, qué moví, qué cambié o qué rompí.</p>
+          </article>
+
+          <article class="step-card">
+            <strong>03</strong>
+            <h3>Resultado</h3>
+            <p>Qué funcionó, qué no y qué sigue después.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="contact-note">
+        <h3>Ideas para próximas notas</h3>
+        <ul>
+          <li>Dual Minecraft con Aster</li>
+          <li>Partición real por usuario</li>
+          <li>RAM por instancia en pruebas reales</li>
+          <li>Photon vs rendimiento bruto</li>
+          <li>Lab ideas para Thiago</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>NeuroDev Studios © 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
