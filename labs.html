@@ -1,50 +1,91 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Productos | NeuroDev Studios</title>
-  <meta name="description" content="Productos y software en desarrollo dentro de NeuroDev Studios." />
-  <link rel="icon" href="img/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <title>Labs y Prototipos | NeuroDev Studios</title>
+  <meta
+    name="description"
+    content="NeuroDev Labs: experimentos tecnol&oacute;gicos, multi-seat, optimizaci&oacute;n de rendimiento y prototipos de producto."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NeuroDev Studios" />
+  <meta property="og:title" content="Labs y Prototipos | NeuroDev Studios" />
+  <meta property="og:description" content="NeuroDev Labs: experimentos tecnol&oacute;gicos, multi-seat, optimizaci&oacute;n de rendimiento y prototipos de producto." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Labs y Prototipos | NeuroDev Studios" />
+  <meta name="twitter:description" content="NeuroDev Labs: experimentos tecnol&oacute;gicos, multi-seat, optimizaci&oacute;n de rendimiento y prototipos de producto." />
+  <meta property="og:image" content="social-preview.svg" />
+  <meta name="twitter:image" content="social-preview.svg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="img/brand-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
       <a href="index.html" class="brand">
-        <img src="img/favicon.png" alt="NeuroDev Studios" class="brand-logo">
+        <img src="img/brand-icon.png" alt="NeuroDev Studios" class="brand-logo" />
         <div>
           <span class="brand-name">NeuroDev Studios</span>
-          <small class="brand-sub">Digital Systems · Web · Labs</small>
+          <small class="brand-sub">
+            <span class="lang es">Digital Systems &middot; Web &middot; Labs</span>
+            <span class="lang en">Digital Systems &middot; Web &middot; Labs</span>
+          </small>
         </div>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir men&uacute;">&#9776;</button>
 
       <nav class="nav-links" id="navLinks">
-        <a href="index.html">Inicio</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="productos.html">Productos</a>
+        <a href="index.html">
+          <span class="lang es">Inicio</span>
+          <span class="lang en">Home</span>
+        </a>
+        <a href="proyectos.html">
+          <span class="lang es">Proyectos</span>
+          <span class="lang en">Projects</span>
+        </a>
+        <a href="servicios.html">
+          <span class="lang es">Servicios</span>
+          <span class="lang en">Services</span>
+        </a>
+        <a href="productos.html">
+          <span class="lang es">Productos</span>
+          <span class="lang en">Products</span>
+        </a>
         <a href="labs.html">Labs</a>
         <a href="lab-notes.html">Lab Notes</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="sobre.html">
+          <span class="lang es">Sobre</span>
+          <span class="lang en">About</span>
+        </a>
+        <a href="contacto.html">
+          <span class="lang es">Contacto</span>
+          <span class="lang en">Contact</span>
+        </a>
+
+        <div class="lang-switch">
+          <button id="btn-es" class="lang-btn active" type="button">ES</button>
+          <button id="btn-en" class="lang-btn" type="button">EN</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <main class="subpage-hero">
-    <a href="lab-notes.html" class="btn btn-secondary">Ver Lab Notes</a>
     <div class="container">
-      <span class="eyebrow">Productos</span>
-      <h1>Software propio en construcción</h1>
+      <span class="eyebrow">NeuroDev Labs</span>
+      <h1>Investigaci&oacute;n aplicada y prototipos</h1>
       <p>
-        La evolución natural de NeuroDev Studios no es solo vender servicios, sino construir
-        productos digitales propios con potencial de crecer y escalar.
+        El laboratorio del estudio: pruebas reales, ideas t&eacute;cnicas y sistemas que hoy son
+        experimentos y ma&ntilde;ana pueden convertirse en productos.
       </p>
     </div>
   </main>
@@ -53,26 +94,29 @@
     <div class="container">
       <div class="cards-grid">
         <article class="card">
-          <div class="icon">🧠</div>
-          <h3>Psychometric Platform</h3>
+          <div class="icon">PC</div>
+          <h3>Multi-seat PC</h3>
           <p>
-            Plataforma orientada a psicólogos para digitalizar pruebas psicométricas, organizar respuestas y profesionalizar la experiencia del proceso.
+            Implementaci&oacute;n real de una sola PC convertida en m&uacute;ltiples estaciones funcionales
+            para estudio, tareas y gaming ligero.
           </p>
         </article>
 
         <article class="card">
-          <div class="icon">📊</div>
-          <h3>HR Evaluation Platform</h3>
+          <div class="icon">OK</div>
+          <h3>Caso validado</h3>
           <p>
-            Sistema para recursos humanos orientado a evaluaciones, flujo de candidatos y procesos más estructurados dentro de reclutamiento.
+            Familia con 4 hijos usando una sola computadora con sesiones separadas, reduciendo
+            costos aproximados de 30 mil a 15 mil pesos Mexicanos.
           </p>
         </article>
 
         <article class="card">
-          <div class="icon">🚀</div>
-          <h3>Visión de producto</h3>
+          <div class="icon">LAB</div>
+          <h3>Validaci&oacute;n de mercado</h3>
           <p>
-            Servicios que hoy financian la construcción de software propio para mañana.
+            Inter&eacute;s org&aacute;nico real, instalaciones pagadas y una l&iacute;nea clara hacia un posible
+            producto tipo multi-seat mejorado.
           </p>
         </article>
       </div>
@@ -82,29 +126,80 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-head left">
-        <h2>Dirección del estudio</h2>
+        <h2>Optimizaci&oacute;n y rendimiento</h2>
         <p>
-          NeuroDev Studios está creciendo desde servicios reales hacia propiedad intelectual, productos y sistemas más grandes.
+          Pruebas sobre hardware real, accesible y con foco en estabilidad m&aacute;s que en promesas
+          vac&iacute;as.
         </p>
       </div>
 
       <div class="cards-grid">
         <article class="card">
-          <div class="icon">🛠️</div>
-          <h3>Hoy</h3>
-          <p>Desarrollo web, presencia digital, contenido y soluciones para clientes reales.</p>
+          <div class="icon">FPS</div>
+          <h3>Minecraft Performance</h3>
+          <p>
+            Optimizaci&oacute;n de Minecraft moddeado con APUs AMD, RX 580, shaders Photon, hasta 200
+            mods y escenarios de doble instancia.
+          </p>
         </article>
 
         <article class="card">
-          <div class="icon">📦</div>
-          <h3>Transición</h3>
-          <p>Construcción de SaaS y herramientas digitales que nacen de problemas reales ya detectados.</p>
+          <div class="icon">HW</div>
+          <h3>Hardware accesible</h3>
+          <p>
+            Pruebas sobre setups realistas: Ryzen 5600G, iGPU, 8 a 48 GB RAM, RX 580 y
+            configuraciones orientadas a personas con equipos modestos.
+          </p>
         </article>
 
         <article class="card">
-          <div class="icon">🏗️</div>
-          <h3>Mañana</h3>
-          <p>Productos propios, laboratorios tecnológicos y sistemas con identidad propia.</p>
+          <div class="icon">ST</div>
+          <h3>Estabilidad real</h3>
+          <p>
+            Experimentos enfocados en temperatura, consumo, rendimiento sostenible y uso
+            funcional, no solo en screenshots llamativas.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head left">
+        <h2>Visi&oacute;n futura</h2>
+        <p>
+          Algunas ideas ya apuntan a productos m&aacute;s grandes: asistentes, sistemas mejorados y
+          tecnolog&iacute;a con enfoque humano.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="icon">AI</div>
+          <h3>Thiago</h3>
+          <p>
+            Concepto de asistente digital con visi&oacute;n de acompa&ntilde;amiento, ayuda pr&aacute;ctica y
+            presencia m&aacute;s humana.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">SYS</div>
+          <h3>Sistema tipo Aster mejorado</h3>
+          <p>
+            Idea de un software multi-seat con mejor aislamiento por usuario, mejor
+            compatibilidad con juegos y menos maniobras extra&ntilde;as.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">R&amp;D</div>
+          <h3>Research-driven building</h3>
+          <p>
+            Construcci&oacute;n desde observaci&oacute;n, pruebas, errores y validaci&oacute;n con el mundo real, no
+            solo teor&iacute;a.
+          </p>
         </article>
       </div>
     </div>
@@ -112,7 +207,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>NeuroDev Studios © 2026</p>
+      <p>NeuroDev Studios &copy; 2026</p>
     </div>
   </footer>
 

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Labs | NeuroDev Studios</title>
-  <meta name="description" content="NeuroDev Labs: experimentos tecnológicos, sistemas multi-seat, optimización y conceptos de producto futuro." />
-  <link rel="icon" href="img/favicon.png" />
+  <title>Sobre el Estudio | NeuroDev Studios</title>
+  <meta name="description" content="Conoce el estudio, su enfoque en desarrollo web, presencia digital, productos y experimentación técnica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NeuroDev Studios" />
+  <meta property="og:title" content="Sobre el Estudio | NeuroDev Studios" />
+  <meta property="og:description" content="Conoce el estudio, su enfoque en desarrollo web, presencia digital, productos y experimentación técnica." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sobre el Estudio | NeuroDev Studios" />
+  <meta name="twitter:description" content="Conoce el estudio, su enfoque en desarrollo web, presencia digital, productos y experimentación técnica." />
+  <meta property="og:image" content="social-preview.svg" />
+  <meta name="twitter:image" content="social-preview.svg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="img/brand-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
@@ -15,106 +25,134 @@
   <header class="topbar">
     <div class="container nav">
       <a href="index.html" class="brand">
-        <img src="img/favicon.png" alt="NeuroDev Studios" class="brand-logo">
+        <img src="img/brand-icon.png" alt="NeuroDev Studios" class="brand-logo">
         <div>
           <span class="brand-name">NeuroDev Studios</span>
-          <small class="brand-sub">Digital Systems · Web · Labs</small>
+          <small class="brand-sub">
+            <span class="lang es">Digital Systems · Web · Labs</span>
+            <span class="lang en">Digital Systems · Web · Labs</span>
+            <span class="lang pt">Digital Systems · Web · Labs</span>
+          </small>
         </div>
       </a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
 
       <nav class="nav-links" id="navLinks">
-        <a href="index.html">Inicio</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="productos.html">Productos</a>
+        <a href="index.html">
+          <span class="lang es">Inicio</span>
+          <span class="lang en">Home</span>
+          <span class="lang pt">Início</span>
+        </a>
+        <a href="proyectos.html">
+          <span class="lang es">Proyectos</span>
+          <span class="lang en">Projects</span>
+          <span class="lang pt">Projetos</span>
+        </a>
+        <a href="servicios.html">
+          <span class="lang es">Servicios</span>
+          <span class="lang en">Services</span>
+          <span class="lang pt">Serviços</span>
+        </a>
+        <a href="productos.html">
+          <span class="lang es">Productos</span>
+          <span class="lang en">Products</span>
+          <span class="lang pt">Produtos</span>
+        </a>
         <a href="labs.html">Labs</a>
         <a href="lab-notes.html">Lab Notes</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="sobre.html">
+          <span class="lang es">Sobre</span>
+          <span class="lang en">About</span>
+          <span class="lang pt">Sobre</span>
+        </a>
+        <a href="contacto.html">
+          <span class="lang es">Contacto</span>
+          <span class="lang en">Contact</span>
+          <span class="lang pt">Contato</span>
+        </a>
+
+        <div class="lang-switch">
+          <button id="btn-es" class="lang-btn active" type="button">ES</button>
+          <button id="btn-en" class="lang-btn" type="button">EN</button>
+          <button id="btn-pt" class="lang-btn" type="button">PT</button>
+        </div>
       </nav>
     </div>
   </header>
 
   <main class="subpage-hero">
     <div class="container">
-      <span class="eyebrow">NeuroDev Labs</span>
-      <h1>Investigación aplicada y prototipos</h1>
+      <span class="eyebrow">Sobre</span>
+      <h1>Un estudio pequeño con visión de producto</h1>
       <p>
-        El laboratorio del estudio: pruebas reales, ideas técnicas y sistemas que hoy son experimentos
-        y mañana pueden convertirse en productos.
+        NeuroDev Studios nace de experiencia real en desarrollo web, presencia digital y
+        experimentación técnica. La idea es construir cosas útiles, claras y escalables sin perder cercanía.
       </p>
     </div>
   </main>
 
   <section class="section">
-    <div class="container">
-      <div class="cards-grid">
-        <article class="card">
-          <div class="icon">🖥️</div>
-          <h3>Multi-seat PC</h3>
-          <p>
-            Implementación real de una sola PC convertida en múltiples estaciones funcionales para estudio,
-            tareas y gaming ligero.
-          </p>
-        </article>
+    <div class="container about-layout">
+      <article class="card">
+        <div class="icon">🧭</div>
+        <h2>Qué es el estudio</h2>
+        <p>
+          Un estudio digital liderado por founder, pensado para resolver necesidades reales con
+          una mezcla de ejecución rápida, criterio visual y mentalidad de producto.
+        </p>
+      </article>
 
-        <article class="card">
-          <div class="icon">👨‍👩‍👧‍👦</div>
-          <h3>Caso validado</h3>
-          <p>
-            Familia con 4 hijos usando una sola computadora con sesiones separadas, reduciendo costos
-            aproximados de 30 mil a 15 mil pesos Mexicanos.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="icon">💸</div>
-          <h3>Validación de mercado</h3>
-          <p>
-            Interés orgánico real, instalaciones pagadas y una línea clara hacia un posible producto
-            tipo multi-seat mejorado.
-          </p>
-        </article>
-      </div>
+      <article class="card">
+        <div class="icon">⚙️</div>
+        <h2>Cómo trabajamos</h2>
+        <p>
+          Arrancamos con lo esencial, validamos rápido y construimos una base que pueda crecer.
+          Eso aplica tanto para una web simple como para un sistema más ambicioso.
+        </p>
+      </article>
     </div>
   </section>
 
   <section class="section section-alt">
     <div class="container">
       <div class="section-head left">
-        <h2>Optimización y rendimiento</h2>
+        <h2>Cómo creció</h2>
         <p>
-          Pruebas sobre hardware real, accesible y con foco en estabilidad más que en promesas vacías.
+          De páginas individuales y clientes reales hacia una estructura con servicios, productos y laboratorios.
         </p>
       </div>
 
-      <div class="cards-grid">
-        <article class="card">
-          <div class="icon">🎮</div>
-          <h3>Minecraft Performance</h3>
+      <div class="timeline">
+        <article class="timeline-item">
+          <strong>01</strong>
+          <h3>Inicio</h3>
           <p>
-            Optimización de Minecraft moddeado con APUs AMD, RX 580, shaders Photon, hasta 200 mods
-            y escenarios de doble instancia.
+            Primeros sitios web y proyectos pequeños para aprender a resolver problemas reales con diseño y código.
           </p>
         </article>
 
-        <article class="card">
-          <div class="icon">📈</div>
-          <h3>Hardware accesible</h3>
+        <article class="timeline-item">
+          <strong>02</strong>
+          <h3>Servicios</h3>
           <p>
-            Pruebas sobre setups realistas: Ryzen 5600G, iGPU, 8 a 48 GB RAM, RX 580 y configuraciones
-            orientadas a personas con equipos modestos.
+            El estudio tomó forma con páginas para profesionales, presencia digital y apoyo práctico para clientes.
           </p>
         </article>
 
-        <article class="card">
-          <div class="icon">🌡️</div>
-          <h3>Estabilidad real</h3>
+        <article class="timeline-item">
+          <strong>03</strong>
+          <h3>Productos</h3>
           <p>
-            Experimentos enfocados en temperatura, consumo, rendimiento sostenible y uso funcional,
-            no solo en screenshots llamativas.
+            A partir de esos problemas reales surgieron ideas de software propio y herramientas más escalables.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <strong>04</strong>
+          <h3>Laboratorio</h3>
+          <p>
+            Pruebas técnicas, performance, multi-seat, gaming y experimentos que alimentan la visión futura del estudio.
           </p>
         </article>
       </div>
@@ -124,37 +162,59 @@
   <section class="section">
     <div class="container">
       <div class="section-head left">
-        <h2>Visión futura</h2>
+        <h2>Lo que buscamos construir</h2>
         <p>
-          Algunas ideas ya apuntan a productos más grandes: asistentes, sistemas mejorados y tecnología con enfoque humano.
+          El objetivo no es solo entregar sitios. Es crear sistemas útiles, presencia digital y productos propios con dirección clara.
         </p>
       </div>
 
       <div class="cards-grid">
         <article class="card">
-          <div class="icon">🤖</div>
-          <h3>Thiago</h3>
-          <p>
-            Concepto de asistente digital con visión de acompañamiento, ayuda práctica y presencia más humana.
-          </p>
+          <div class="icon">💻</div>
+          <h3>Web</h3>
+          <p>Presencia clara, útil y rápida para profesionales, negocios y proyectos serios.</p>
         </article>
 
         <article class="card">
-          <div class="icon">🧠</div>
-          <h3>Sistema tipo Aster mejorado</h3>
-          <p>
-            Idea de un software multi-seat con mejor aislamiento por usuario, mejor compatibilidad
-            con juegos y menos maniobras extrañas.
-          </p>
+          <div class="icon">📦</div>
+          <h3>Products</h3>
+          <p>Software propio nacido de problemas reales, con potencial de crecer y escalar.</p>
         </article>
 
         <article class="card">
           <div class="icon">🧪</div>
-          <h3>Research-driven building</h3>
-          <p>
-            Construcción desde observación, pruebas, errores y validación con el mundo real, no solo teoría.
-          </p>
+          <h3>Labs</h3>
+          <p>Experimentos técnicos que ayudan a validar ideas antes de convertirlas en algo mayor.</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container contact-box">
+      <div>
+        <div class="section-head left">
+          <h2>Rumbo actual</h2>
+          <p>
+            NeuroDev Studios sigue creciendo desde proyectos reales hacia una marca con más producto, más sistema y más continuidad.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+          <a href="contacto.html" class="btn btn-secondary">Hablemos</a>
+        </div>
+      </div>
+
+      <div class="contact-note">
+        <h3>Base actual</h3>
+        <ul>
+          <li>Desarrollo web</li>
+          <li>Presencia digital</li>
+          <li>Productos propios</li>
+          <li>Laboratorio técnico</li>
+          <li>Visión de producto</li>
+        </ul>
       </div>
     </div>
   </section>

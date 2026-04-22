@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeuroDev Studios</title>
-  <meta name="description" content="NeuroDev Studios — desarrollo web, productos digitales, presencia online y experimentos tecnológicos." />
-  <link rel="icon" href="img/favicon.png" />
+  <title>NeuroDev Studios | Desarrollo Web y Presencia Digital</title>
+  <meta name="description" content="Estudio digital para psicólogos, negocios y profesionales: desarrollo web, presencia digital, productos SaaS y experimentos tecnológicos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NeuroDev Studios" />
+  <meta property="og:title" content="NeuroDev Studios | Desarrollo Web y Presencia Digital" />
+  <meta property="og:description" content="Estudio digital para psicólogos, negocios y profesionales: desarrollo web, presencia digital, productos SaaS y experimentos tecnológicos." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="NeuroDev Studios | Desarrollo Web y Presencia Digital" />
+  <meta name="twitter:description" content="Estudio digital para psicólogos, negocios y profesionales: desarrollo web, presencia digital, productos SaaS y experimentos tecnológicos." />
+  <meta property="og:image" content="social-preview.svg" />
+  <meta name="twitter:image" content="social-preview.svg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="img/brand-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
@@ -15,92 +25,185 @@
   <header class="topbar">
   <div class="container nav">
     <a href="index.html" class="brand">
-      <img src="img/favicon.png" alt="NeuroDev Studios" class="brand-logo">
+      <img src="img/brand-icon.png" alt="NeuroDev Studios" class="brand-logo">
       <div>
         <span class="brand-name">NeuroDev Studios</span>
-        <small class="brand-sub">Digital Systems · Web · Labs</small>
+        <small class="brand-sub">
+          <span class="lang es">Digital Systems · Web · Labs</span>
+          <span class="lang en">Digital Systems · Web · Labs</span>
+        </small>
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-      ☰
-    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
 
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Inicio</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="productos.html">Productos</a>
+      <a href="index.html">
+        <span class="lang es">Inicio</span>
+        <span class="lang en">Home</span>
+      </a>
+      <a href="proyectos.html">
+        <span class="lang es">Proyectos</span>
+        <span class="lang en">Projects</span>
+      </a>
+      <a href="servicios.html">
+        <span class="lang es">Servicios</span>
+        <span class="lang en">Services</span>
+      </a>
+      <a href="productos.html">
+        <span class="lang es">Productos</span>
+        <span class="lang en">Products</span>
+      </a>
       <a href="labs.html">Labs</a>
       <a href="lab-notes.html">Lab Notes</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="sobre.html">
+        <span class="lang es">Sobre</span>
+        <span class="lang en">About</span>
+      </a>
+      <a href="contacto.html">
+        <span class="lang es">Contacto</span>
+        <span class="lang en">Contact</span>
+      </a>
+
+      <div class="lang-switch">
+        <button id="btn-es" class="lang-btn active" type="button">ES</button>
+        <button id="btn-en" class="lang-btn" type="button">EN</button>
+      </div>
     </nav>
   </div>
 </header>
 
-  <main id="inicio">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Founder-led digital studio</span>
-          <h1>
-            Construyo <span>soluciones digitales</span> con enfoque en web, productos y experimentación tecnológica.
-          </h1>
-          <p>
-            NeuroDev Studios es mi estudio digital: desarrollo micro-sitios profesionales,
-            productos SaaS, presencia online y experimentos tecnológicos con aplicación real.
-          </p>
+  <main>
+    <section class="hero hero-v2">
+  <div class="container hero-v2-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">
+          <span class="lang es">Desarrollo web, presencia digital y producto</span>
+        <span class="lang en">Founder-led digital studio</span>
+      </span>
 
-          <div class="hero-actions">
-            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-            <a href="#contacto" class="btn btn-secondary">Trabajar conmigo</a>
-          </div>
+      <h1>
+        <span class="lang es">Desarrollo web claro, <span>presencia digital</span> y productos con visión de laboratorio.</span>
+        <span class="lang en">Building <span>digital systems</span>, online presence and products with a lab-driven vision.</span>
+      </h1>
 
-          <div class="hero-stats">
-            <article class="stat-card">
-              <strong>15+</strong>
-              <span>sitios desarrollados</span>
-            </article>
-            <article class="stat-card">
-              <strong>25</strong>
-              <span>negocios en Google</span>
-            </article>
-            <article class="stat-card">
-              <strong>50k+</strong>
-              <span>audiencia en TikTok</span>
-            </article>
-          </div>
-        </div>
+      <p>
+        <span class="lang es">
+          NeuroDev Studios crea sitios web, presencia digital y productos propios para psicólogos,
+          negocios y profesionales que necesitan verse bien y crecer con una base sólida.
+        </span>
+        <span class="lang en">
+          NeuroDev Studios is a digital studio focused on web development, online presence,
+          SaaS products and technology experiments born from real-world testing.
+        </span>
+      </p>
 
-        <div class="hero-panel">
-          <div class="panel-card">
-            <span class="panel-tag">Web</span>
-            <h3>Micro-sitios profesionales</h3>
-            <p>Psicólogos, negocios, profesionales e instituciones.</p>
-          </div>
+      <div class="hero-actions">
+        <a href="proyectos.html" class="btn btn-primary">
+          <span class="lang es">Ver proyectos</span>
+          <span class="lang en">View projects</span>
+        </a>
+        <a href="contacto.html" class="btn btn-secondary">
+          <span class="lang es">Hablemos</span>
+          <span class="lang en">Work with me</span>
+        </a>
+      </div>
 
-          <div class="panel-card">
-            <span class="panel-tag">Products</span>
-            <h3>SaaS en desarrollo</h3>
-            <p>Plataforma psicométrica y sistema para RRHH.</p>
-          </div>
+      <div class="hero-stats">
+        <article class="stat-card">
+          <strong>15+</strong>
+          <span>
+            <span class="lang es">sitios web desarrollados</span>
+            <span class="lang en">websites built</span>
+          </span>
+        </article>
 
-          <div class="panel-card">
-            <span class="panel-tag">Labs</span>
-            <h3>Experimentos reales</h3>
-            <p>Multi-seat PC, optimización Minecraft y sistemas experimentales.</p>
-          </div>
+        <article class="stat-card">
+          <strong>25</strong>
+          <span>
+            <span class="lang es">negocios gestionados en Google</span>
+            <span class="lang en">businesses managed on Google</span>
+          </span>
+        </article>
+
+        <article class="stat-card">
+          <strong>50k+</strong>
+          <span>
+            <span class="lang es">audiencia en TikTok</span>
+            <span class="lang en">TikTok audience</span>
+          </span>
+        </article>
+      </div>
+    </div>
+
+    <aside class="hero-showcase">
+      <div class="showcase-card showcase-main">
+        <span class="mini-label">Studio Snapshot</span>
+
+        <h3>Web · Products · Labs</h3>
+
+        <p>
+          <span class="lang es">
+            Un estudio pequeño con base en proyectos reales, construcción autodidacta y visión de producto.
+          </span>
+          <span class="lang en">
+            A small studio built on real projects, self-taught execution and a product-driven mindset.
+          </span>
+        </p>
+
+        <div class="showcase-tags">
+          <span>Psychology</span>
+          <span>Web</span>
+          <span>SaaS</span>
+          <span>Systems</span>
+          <span>Gaming Lab</span>
         </div>
       </div>
-    </section>
 
-    <section class="section" id="servicios">
+      <div class="showcase-mini-grid">
+        <div class="showcase-mini">
+          <span>Web</span>
+          <strong>
+            <span class="lang es">Psicólogos, negocios y profesionales</span>
+            <span class="lang en">Psychologists, businesses and professionals</span>
+          </strong>
+        </div>
+
+        <div class="showcase-mini">
+          <span>Products</span>
+          <strong>
+            <span class="lang es">Plataforma psicométrica + RRHH</span>
+            <span class="lang en">Psychometric platform + HR</span>
+          </strong>
+        </div>
+
+        <div class="showcase-mini">
+          <span>Labs</span>
+          <strong>
+            <span class="lang es">Multi-seat, Aster, Minecraft, Thiago</span>
+            <span class="lang en">Multi-seat, Aster, Minecraft, Thiago</span>
+          </strong>
+        </div>
+
+        <div class="showcase-mini">
+          <span>Presence</span>
+          <strong>
+            <span class="lang es">SEO local y contenido digital</span>
+            <span class="lang en">Local SEO and digital content</span>
+          </strong>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+    <section class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Servicios</h2>
+          <h2>Qué construye el estudio</h2>
           <p>
-            Un estudio pequeño con enfoque práctico: presencia digital, desarrollo web y ejecución rápida.
+            NeuroDev Studios no gira alrededor de una sola habilidad. Combina ejecución práctica,
+            productos propios y experimentación tecnológica.
           </p>
         </div>
 
@@ -108,58 +211,108 @@
           <article class="card">
             <div class="icon">💻</div>
             <h3>Desarrollo web</h3>
-            <p>Micro-sitios profesionales para psicólogos, negocios y especialistas.</p>
+            <p>
+              Micro-sitios y páginas profesionales para psicólogos, negocios, profesionales e instituciones.
+            </p>
           </article>
 
           <article class="card">
-            <div class="icon">📍</div>
-            <h3>Presencia digital</h3>
-            <p>Optimización de Google Business y presencia online para negocios locales.</p>
+            <div class="icon">📦</div>
+            <h3>Productos</h3>
+            <p>
+              SaaS y herramientas digitales en construcción a partir de problemas reales detectados en campo.
+            </p>
           </article>
 
           <article class="card">
-            <div class="icon">🎬</div>
-            <h3>Contenido y redes</h3>
-            <p>Edición de video y gestión de contenido para YouTube, Facebook, Instagram y TikTok.</p>
+            <div class="icon">🧪</div>
+            <h3>Labs</h3>
+            <p>
+              Pruebas técnicas, sistemas multi-seat, optimización de Minecraft y conceptos como Thiago.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="proyectos">
-      <div class="container">
-        <div class="section-head">
-          <h2>Proyectos</h2>
+    <section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Proyectos reales</h2>
+      <p>
+        Una muestra rápida de trabajos desarrollados para clientes reales.
+      </p>
+    </div>
+
+    <div class="project-visual-grid">
+
+      <!-- Wagner -->
+      <article class="visual-card visual-card-wagner">
+        <div class="visual-thumb">
+          <img src="img/projects/wagner.png" alt="Psicólogo Jorge Wagner" loading="lazy">
+        </div>
+        <div class="visual-body">
+          <span class="visual-type">Psicología</span>
+          <h3>Jorge Wagner</h3>
           <p>
-            Experiencia real en distintas categorías, con foco fuerte en psicología y profesionales.
+            Sitio profesional con enfoque moderno y presencia clara para consulta psicológica.
           </p>
+          <div class="visual-actions">
+            <a href="https://santiagopsicodev.github.io/psicologo_wagner/" target="_blank" rel="noreferrer">
+              Ver sitio →
+            </a>
+          </div>
         </div>
+      </article>
 
-        <div class="project-groups">
-          <article class="project-group">
-            <h3>Psicólogos</h3>
-            <p>9 sitios ya publicados para psicólogos y terapeutas.</p>
-          </article>
-
-          <article class="project-group">
-            <h3>Negocios y profesionales</h3>
-            <p>Tiendas por WhatsApp, carpintería, nutrióloga, arquitecto y diseñador.</p>
-          </article>
-
-          <article class="project-group">
-            <h3>Instituciones</h3>
-            <p>Escuela, radio y menú digital con hosting.</p>
-          </article>
+      <!-- Jesus -->
+      <article class="visual-card visual-card-jesus">
+        <div class="visual-thumb">
+          <img src="img/projects/jesus.png" alt="Mtro. Jesús García Chávez" loading="lazy">
         </div>
-      </div>
-    </section>
+        <div class="visual-body">
+          <span class="visual-type">Psicología</span>
+          <h3>Jesús García Chávez</h3>
+          <p>
+            Página con estilo institucional, clara y enfocada en información profesional.
+          </p>
+          <div class="visual-actions">
+            <a href="https://santiagopsicodev.github.io/psicologo_jesus/" target="_blank" rel="noreferrer">
+              Ver sitio →
+            </a>
+          </div>
+        </div>
+      </article>
 
-    <section class="section" id="productos">
+      <!-- Marcela -->
+      <article class="visual-card visual-card-marcela">
+        <div class="visual-thumb">
+          <img src="img/projects/marcela.png" alt="Dra. Marcela Miranda" loading="lazy">
+        </div>
+        <div class="visual-body">
+          <span class="visual-type">Psicología</span>
+          <h3>Marcela Miranda</h3>
+          <p>
+            Sitio con tono más cálido y cercano, ideal para generar confianza en pacientes.
+          </p>
+          <div class="visual-actions">
+            <a href="https://santiagopsicodev.github.io/psicologa-marcela-miranda/" target="_blank" rel="noreferrer">
+              Ver sitio →
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <section class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Productos</h2>
+          <h2>Productos y visión</h2>
           <p>
-            La parte que crecerá con el tiempo: software propio y herramientas escalables.
+            La meta del estudio no es quedarse solo en servicios. Es convertir experiencia real en propiedad propia.
           </p>
         </div>
 
@@ -167,72 +320,96 @@
           <article class="card">
             <div class="icon">🧠</div>
             <h3>Psychometric Platform</h3>
-            <p>Sistema digital para pruebas psicométricas orientado a psicólogos.</p>
+            <p>
+              Sistema para pruebas psicométricas enfocado en psicólogos y procesos digitales más profesionales.
+            </p>
           </article>
 
           <article class="card">
             <div class="icon">📊</div>
             <h3>HR Evaluation Platform</h3>
-            <p>Plataforma para evaluaciones y flujo digital en recursos humanos.</p>
+            <p>
+              Plataforma para recursos humanos con enfoque en evaluación, flujo y estructura de reclutamiento.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🚀</div>
+            <h3>NeuroDev Studios</h3>
+            <p>
+              Servicios que hoy financian la construcción de software y sistemas más grandes para mañana.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="labs">
+    <section class="section section-alt">
       <div class="container">
         <div class="section-head">
-          <h2>NeuroDev Labs</h2>
+          <h2>Dentro del laboratorio</h2>
           <p>
-            Investigación aplicada, pruebas técnicas y sistemas que podrían convertirse en productos.
+            La parte que le da personalidad al estudio: pruebas reales, gaming como laboratorio y sistemas raros con potencial real.
           </p>
         </div>
 
-        <div class="cards-grid">
-          <article class="card">
-            <div class="icon">🖥️</div>
-            <h3>Multi-seat PC</h3>
-            <p>Una PC convertida en múltiples estaciones funcionales para estudio y gaming ligero.</p>
+        <div class="lab-preview-grid">
+          <article class="lab-preview">
+            <span class="featured-tag">Systems</span>
+            <h3>1 PC → múltiples estaciones</h3>
+            <p>
+              Implementaciones multi-seat con validación real, ahorro de costos y visión hacia un software propio.
+            </p>
           </article>
 
-          <article class="card">
-            <div class="icon">🎮</div>
-            <h3>Minecraft Performance</h3>
-            <p>Pruebas de optimización con mods, shaders, APUs AMD y hardware accesible.</p>
+          <article class="lab-preview">
+            <span class="featured-tag">Performance</span>
+            <h3>Minecraft como laboratorio técnico</h3>
+            <p>
+              Pruebas de rendimiento con APUs AMD, RX 580, mods, shaders y doble instancia.
+            </p>
           </article>
 
-          <article class="card">
-            <div class="icon">🤖</div>
+          <article class="lab-preview">
+            <span class="featured-tag">Future</span>
             <h3>Thiago</h3>
-            <p>Conceptos de asistencia digital y acompañamiento humano-tecnológico a largo plazo.</p>
+            <p>
+              Exploración de un asistente más humano, útil y presente dentro de una visión de largo plazo.
+            </p>
           </article>
+        </div>
+
+        <div class="section-cta">
+          <a href="labs.html" class="btn btn-secondary">Explorar Labs</a>
+          <a href="lab-notes.html" class="btn btn-primary">Leer Lab Notes</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contacto">
+    <section class="section">
       <div class="container contact-box">
         <div>
           <div class="section-head left">
-            <h2>Contacto</h2>
+            <h2>¿Qué sigue?</h2>
             <p>
-              Si quieres una web, presencia digital o construir algo más serio, hablemos.
+              Si necesitas una web, presencia digital o quieres construir algo más serio, aquí hay base para hacerlo bien.
             </p>
           </div>
 
           <div class="contact-actions">
-            <a href="https://wa.me/525531233032" target="_blank" class="btn btn-primary">WhatsApp</a>
-            <a href="mailto:contacto@neurodevstudio.com" class="btn btn-secondary">Email</a>
+            <a href="contacto.html" class="btn btn-primary">Contactar estudio</a>
+            <a href="proyectos.html" class="btn btn-secondary">Ver portafolio completo</a>
           </div>
         </div>
 
         <div class="contact-note">
           <h3>Base actual</h3>
           <ul>
-            <li>Micro-sitios desde 2018</li>
-            <li>Experiencia en psicología y negocios</li>
-            <li>SEO local y redes</li>
-            <li>Productos propios en desarrollo</li>
+            <li>Webs para psicólogos y profesionales</li>
+            <li>Google Business y visibilidad local</li>
+            <li>Community management y contenido</li>
+            <li>Productos SaaS en desarrollo</li>
+            <li>Laboratorio técnico activo</li>
           </ul>
         </div>
       </div>

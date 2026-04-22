@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto | NeuroDev Studios</title>
-  <meta name="description" content="Contacto de NeuroDev Studios: desarrollo web, presencia digital, productos y colaboración." />
-  <link rel="icon" href="img/favicon.png" />
+  <title>Contacto Web | NeuroDev Studios</title>
+  <meta name="description" content="Contacto para sitios web, presencia digital, SEO local y proyectos digitales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NeuroDev Studios" />
+  <meta property="og:title" content="Contacto Web | NeuroDev Studios" />
+  <meta property="og:description" content="Contacto para sitios web, presencia digital, SEO local y proyectos digitales." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contacto Web | NeuroDev Studios" />
+  <meta name="twitter:description" content="Contacto para sitios web, presencia digital, SEO local y proyectos digitales." />
+  <meta property="og:image" content="social-preview.svg" />
+  <meta name="twitter:image" content="social-preview.svg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="img/brand-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
@@ -13,38 +23,63 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="container nav">
-      <a href="index.html" class="brand">
-        <img src="img/favicon.png" alt="NeuroDev Studios" class="brand-logo">
-        <div>
-          <span class="brand-name">NeuroDev Studios</span>
-          <small class="brand-sub">Digital Systems · Web · Labs</small>
-        </div>
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="img/brand-icon.png" alt="NeuroDev Studios" class="brand-logo">
+      <div>
+        <span class="brand-name">NeuroDev Studios</span>
+        <small class="brand-sub">
+          <span class="lang es">Digital Systems · Web · Labs</span>
+          <span class="lang en">Digital Systems · Web · Labs</span>
+        </small>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">
+        <span class="lang es">Inicio</span>
+        <span class="lang en">Home</span>
+      </a>
+      <a href="proyectos.html">
+        <span class="lang es">Proyectos</span>
+        <span class="lang en">Projects</span>
+      </a>
+      <a href="servicios.html">
+        <span class="lang es">Servicios</span>
+        <span class="lang en">Services</span>
+      </a>
+      <a href="productos.html">
+        <span class="lang es">Productos</span>
+        <span class="lang en">Products</span>
+      </a>
+      <a href="labs.html">Labs</a>
+      <a href="lab-notes.html">Lab Notes</a>
+      <a href="sobre.html">
+        <span class="lang es">Sobre</span>
+        <span class="lang en">About</span>
+      </a>
+      <a href="contacto.html">
+        <span class="lang es">Contacto</span>
+        <span class="lang en">Contact</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
-
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html">Inicio</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="productos.html">Productos</a>
-        <a href="labs.html">Labs</a>
-        <a href="lab-notes.html">Lab Notes</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contacto.html">Contacto</a>
-        
-      </nav>
-    </div>
-  </header>
+      <div class="lang-switch">
+        <button id="btn-es" class="lang-btn active" type="button">ES</button>
+        <button id="btn-en" class="lang-btn" type="button">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
 
   <main class="subpage-hero">
     <div class="container">
       <span class="eyebrow">Contacto</span>
-      <h1>Hablemos de tu proyecto</h1>
+      <h1>Cuéntame qué quieres construir</h1>
       <p>
-        Si necesitas una web, presencia digital, apoyo en contenido o quieres construir algo más serio,
-        este es el punto de contacto.
+        Si necesitas un sitio web, presencia digital o apoyo para lanzar algo más serio,
+        aquí empezamos.
       </p>
     </div>
   </main>
@@ -54,12 +89,13 @@
       <article class="card">
         <h2>Canales directos</h2>
         <p>
-          La forma más rápida de contacto es por WhatsApp. También puedes escribir por correo.
+          La vía más rápida es WhatsApp. También puedes escribir por correo si prefieres
+          contar tu proyecto con más detalle.
         </p>
 
         <div class="contact-actions">
-          <a href="https://wa.me/525531233032" target="_blank" class="btn btn-primary">WhatsApp</a>
-          <a href="mailto:contacto@neurodevstudio.com" class="btn btn-secondary">Email</a>
+          <a href="https://wa.me/525531233032" target="_blank" class="btn btn-primary">Escribir por WhatsApp</a>
+          <a href="mailto:contacto@neurodevstudio.com" class="btn btn-secondary">Enviar correo</a>
         </div>
       </article>
 
@@ -79,9 +115,9 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-head left">
-        <h2>Qué puedes solicitar</h2>
+        <h2>Qué podemos construir</h2>
         <p>
-          NeuroDev Studios no solo hace páginas. También construye presencia y soluciones con enfoque práctico.
+          Desde un micro-sitio profesional hasta apoyo en presencia digital y proyectos más técnicos.
         </p>
       </div>
 
